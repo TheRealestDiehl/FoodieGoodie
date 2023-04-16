@@ -1,5 +1,5 @@
 document.getElementById("foods").onclick = function(){
-    window.location.href ="/foods.html"
+    window.location.href ="./foods.html"
 }
 
 // function go_food(){
@@ -7,19 +7,19 @@ document.getElementById("foods").onclick = function(){
 // }
 
 document.getElementById("meat").onclick = function(){
-    window.location.href ="/meat.html"
+    window.location.href ="./meat.html"
 }
 
 document.getElementById("vegetables").onclick = function(){
-    window.location.href ="/vegetables.html"
+    window.location.href ="./vegetables.html"
 }
 document.getElementById("fruits").onclick = function(){
-    window.location.href ="/fruits.html"
+    window.location.href ="./fruits.html"
 }
 
 document.getElementById("checkout").onclick = function(){
-    window.location.href ="/checkout.html"
+    window.location.href ="./checkout.html"
 }
 document.getElementById("contact").onclick = function(){
-    window.location.href ="/contact.html"
+    window.location.href ="./contact.html"
 }
