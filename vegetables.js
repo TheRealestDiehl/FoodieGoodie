@@ -6,11 +6,7 @@ $(function(){
   
 
   $(function(){
-    $("#list").load("./list.html")
-  })
-
-
-  window.onload = function(){
+    $("#list").load("./list.html",function(){
     var images = document.getElementsByTagName('img');
     var images = document.getElementsByClassName("card-img-top");
     images[0].src = "./src/public/vegetables/brocolli.jpeg";
@@ -19,12 +15,6 @@ $(function(){
     images[3].src = "./src/public/vegetables/carrot.jpeg";
     images[4].src = "./src/public/vegetables/bell pepper.jpeg";
     images[5].src = "./src/public/vegetables/peas.jpeg";
-
-    // var textss = document.querySelector(".side_1");
-    // var priceNode = textss.childNodes[0];
-    // priceNode.nodeValue = "hahah";
-    // var priceNodes = textss.childNodes[1];
-    // priceNodes.nodeValue = "hahazh";
 
     var meat_name  = document.getElementsByClassName("card-title");
     meat_name[0].childNodes[0].nodeValue = "Broccoli";
@@ -36,7 +26,7 @@ $(function(){
 
 
 
-
+    
     var textsss = document.getElementsByClassName("side_1");
     textsss[0].childNodes[0].nodeValue = "$3.99/lb";
     textsss[1].childNodes[0].nodeValue = "$2.29/lb";
@@ -44,9 +34,15 @@ $(function(){
     textsss[3].childNodes[0].nodeValue = "$1.69/lb";
     textsss[4].childNodes[0].nodeValue = "$3.79/lb";
     textsss[5].childNodes[0].nodeValue = "$1.29/lb";
-   
 
-  }
+     //removing the customizing dropdown list
+    var customize = document.querySelectorAll(".dropdown");
+    customize.forEach(function(custo){
+        custo.remove();
+    });
+    })});
+
+
 
 
 

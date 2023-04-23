@@ -5,22 +5,9 @@ $(function(){
 
   
   $(function(){
-    $("#list").load("./list.html")
-  })
-
-
-  // window.onload = function(){
-  //   var images = document.getElementsByTagName('img');
-  //   images[0].src = "./src/public/minions.jpeg";
-  //   images[1].src = "./src/public/minions.jpeg";
-  //   images[2].src = "./src/public/minions.jpeg";
-  //   images[3].src = "./src/public/minions.jpeg";
-  //   images[4].src = "./src/public/minions.jpeg";
-  //   images[5].src = "./src/public/minions.jpeg";
-
-  // }
-
-  window.onload = function(){
+    $("#list").load("./list.html",function(){
+      
+    
     var images = document.getElementsByTagName('img');
     var images = document.getElementsByClassName("card-img-top");
     images[0].src = "./src/public/meat/beef.png";
@@ -29,12 +16,6 @@ $(function(){
     images[3].src = "./src/public/meat/pork.jpeg";
     images[4].src = "./src/public/meat/mutton.jpeg";
     images[5].src = "./src/public/meat/venison.jpeg";
-
-    // var textss = document.querySelector(".side_1");
-    // var priceNode = textss.childNodes[0];
-    // priceNode.nodeValue = "hahah";
-    // var priceNodes = textss.childNodes[1];
-    // priceNodes.nodeValue = "hahazh";
 
     var meat_name  = document.getElementsByClassName("card-title");
     meat_name[0].childNodes[0].nodeValue = "Beef";
@@ -45,8 +26,6 @@ $(function(){
     meat_name[5].childNodes[0].nodeValue = "Venison";
 
 
-
-
     var textsss = document.getElementsByClassName("side_1");
     textsss[0].childNodes[0].nodeValue = "$9.99/lb";
     textsss[1].childNodes[0].nodeValue = "$8.99/lb";
@@ -54,9 +33,17 @@ $(function(){
     textsss[3].childNodes[0].nodeValue = "$10.99/lb";
     textsss[4].childNodes[0].nodeValue = "$13.99/lb";
     textsss[5].childNodes[0].nodeValue = "$15.99/lb";
+
+     //removing the customizing dropdown list
+    var customize = document.querySelectorAll(".dropdown");
+    customize.forEach(function(custo){
+        custo.remove();
+    })
+
    
 
-  }
+    })
+  });
 
 
 
