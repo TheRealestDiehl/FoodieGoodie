@@ -9,12 +9,7 @@ var loadedHtml;
   $(function(){
     $("#list").load("./list.html",function(){
       
-      
 
-      // var check = document.querySelectorAll(".card-title");
-      // check.forEach(function(card_checks){
-      //   console.log(card_checks);
-      // })
     var images = document.getElementsByTagName('img');
     var images = document.getElementsByClassName("card-img-top");
     images[0].src = "./src/public/fruits/banana.jpeg";
@@ -35,7 +30,7 @@ var loadedHtml;
 
     var textsss = document.getElementsByClassName("side_1");
     textsss[0].childNodes[0].nodeValue = "$1.19/lb";
-    textsss[1].childNodes[0].nodeValue = "$5.299/lb";
+    textsss[1].childNodes[0].nodeValue = "$5.29/lb";
     textsss[2].childNodes[0].nodeValue = "$2.59/lb";
     textsss[3].childNodes[0].nodeValue = "$3.99/lb";
     textsss[4].childNodes[0].nodeValue = "$5.49/lb";

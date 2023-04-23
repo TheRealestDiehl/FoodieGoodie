@@ -25,15 +25,13 @@ $(function(){
     meat_name[5].childNodes[0].nodeValue = "Butter Chicken";
 
 
-
-
     var textsss = document.getElementsByClassName("side_1");
     textsss[0].childNodes[0].nodeValue = "$5.99";
     textsss[1].childNodes[0].nodeValue = "$4.99";
     textsss[2].childNodes[0].nodeValue = "$8.99";
     textsss[3].childNodes[0].nodeValue = "$10.99";
-    textsss[4].childNodes[0].nodeValue = "$13.99";
-    textsss[5].childNodes[0].nodeValue = "$15.99";
+    textsss[4].childNodes[0].nodeValue = "$15.99";
+    textsss[5].childNodes[0].nodeValue = "$8.99";
 
    
 
