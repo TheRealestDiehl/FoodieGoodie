@@ -1,10 +1,7 @@
 
-$(function(){
-    $("#navi").load("./navbar.html"); 
-  });
-
   
   $(function(){
+    $("#navi").load("./navbar.html"); 
     $("#list").load("./list.html",function(){
       
     
@@ -40,9 +37,19 @@ $(function(){
         custo.remove();
     })
 
-   
+    });
+    $(document).on('input', '#myInput', function() {
+      var query = $(this).val().toLowerCase();
+      $('.card-title').each(function() {
+        var text = $(this).text().toLowerCase();
+        if (text.indexOf(query) === -1) {
+          $(this).closest('.contains').hide();
+        } else {
+          $(this).closest('.contains').show();
+        }
+      });
+    });
 
-    })
   });
 
 

@@ -1,14 +1,10 @@
 
 
-$(function(){
-    $("#navi").load("./navbar.html"); 
-  });
-
 var loadedHtml;
 
-  $(function(){
-    $("#list").load("./list.html",function(){
-      
+$(function () {
+  $("#navi").load("./navbar.html");
+  $("#list").load("./list.html", function () {
 
     var images = document.getElementsByTagName('img');
     var images = document.getElementsByClassName("card-img-top");
@@ -20,7 +16,7 @@ var loadedHtml;
     images[5].src = "./src/public/fruits/oranges.jpeg";
 
 
-    var meat_name  = document.getElementsByClassName("card-title");
+    var meat_name = document.getElementsByClassName("card-title");
     meat_name[0].childNodes[0].nodeValue = "Banana";
     meat_name[1].childNodes[0].nodeValue = "Strawberry";
     meat_name[2].childNodes[0].nodeValue = "Grape";
@@ -38,10 +34,21 @@ var loadedHtml;
 
     //removing the customizing dropdown list
     var customize = document.querySelectorAll(".dropdown");
-    customize.forEach(function(custo){
-        custo.remove();
+    customize.forEach(function (custo) {
+      custo.remove();
     });
 
-    })
   });
+  $(document).on('input', '#myInput', function () {
+    var query = $(this).val().toLowerCase();
+    $('.card-title').each(function () {
+      var text = $(this).text().toLowerCase();
+      if (text.indexOf(query) === -1) {
+        $(this).closest('.contains').hide();
+      } else {
+        $(this).closest('.contains').show();
+      }
+    });
+  });
+});
 

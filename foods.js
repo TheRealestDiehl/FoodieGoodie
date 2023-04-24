@@ -1,9 +1,10 @@
-$(function(){
+// $(function(){
+//     $("#navi").load("./navbar.html"); 
+//   });
+
+
+  $(function(){ 
     $("#navi").load("./navbar.html"); 
-  });
-
-
-  $(function(){
     $("#list").load("./list.html",function(){
       
     
@@ -19,7 +20,7 @@ $(function(){
     var meat_name  = document.getElementsByClassName("card-title");
     meat_name[0].childNodes[0].nodeValue = "Egg Sandwich";
     meat_name[1].childNodes[0].nodeValue = "Mac & Cheese";
-    meat_name[2].childNodes[0].nodeValue = "Chichek Burger";
+    meat_name[2].childNodes[0].nodeValue = "Chicken Burger";
     meat_name[3].childNodes[0].nodeValue = "Fried Chicken Dumplings";
     meat_name[4].childNodes[0].nodeValue = "Beef Spaghetti";
     meat_name[5].childNodes[0].nodeValue = "Butter Chicken";
@@ -35,5 +36,19 @@ $(function(){
 
    
 
-    })
+    });
+    $(document).on('input', '#myInput', function() {
+      var query = $(this).val().toLowerCase();
+      $('.card-title').each(function() {
+        var text = $(this).text().toLowerCase();
+        if (text.indexOf(query) === -1) {
+          $(this).closest('.contains').hide();
+        } else {
+          $(this).closest('.contains').show();
+        }
+      });
+    });
+
   });
+
+  
