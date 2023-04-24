@@ -36,7 +36,14 @@
     textsss[3].childNodes[0].nodeValue = "$1.69";
     textsss[4].childNodes[0].nodeValue = "$3.79";
     textsss[5].childNodes[0].nodeValue = "$15.99";
+
+    //removing the customizing dropdown list
+    var customize = document.querySelectorAll(".dropdown");
+    customize.forEach(function (custo) {
+      custo.remove();
     });
+    });
+
     $(document).on('input', '#myInput', function() {
       var query = $(this).val().toLowerCase();
       $('.card-title').each(function() {

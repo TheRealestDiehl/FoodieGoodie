@@ -1,6 +1,5 @@
 
 
-var loadedHtml;
 
 $(function () {
   $("#navi").load("./navbar.html");
