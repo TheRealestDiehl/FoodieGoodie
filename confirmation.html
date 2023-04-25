@@ -12,10 +12,35 @@
     <script src="./contact.js"></script>
 </head>
 <style>
-    
+    h1{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
 </style>
 <body class="body">
     <div id="navi"></div>
-    <h1 text-align: center>This is the contact page</h1>
+    <h1>Order Successfully Placed!</h1>
+
+    <br />
+    <p>Order Number: <b id="orderID"></b></p>
+
+    <script>
+        // gets the orderID from the URL, puts it in the <p> tag
+        const tld = window.location.search;
+
+        const urlParams = new URLSearchParams(tld);
+        const orderNumber = urlParams.get("orderID");
+
+        document.getElementById("orderID").innerHTML = orderNumber;
+
+
+        // wait 10 seconds, redirect to the home page
+        setTimeout(function() {
+            window.location.href = tld + "index.html";
+        }, 10000);
+    </script>
 </body>
 </html>
