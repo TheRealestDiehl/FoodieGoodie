@@ -1,3 +1,25 @@
 .body{
     background-color: rgb(235, 196, 0);
 }
+.body{
+    background-color: rgb(235, 196, 0);
+}
+
+#name, #email,#message{
+    /* background-color: rgb(34, 88, 34);  */
+    /* color: white;   */
+    height: 50px;
+    width: 70%;
+}
+#message{
+    height: 200px;
+}
+label{
+    font-weight: bold;
+}
+
+
+.submit{
+    margin-top: 10px;
+    width: 15%;
+}
