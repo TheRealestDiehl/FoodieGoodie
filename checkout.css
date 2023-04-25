@@ -1,0 +1,64 @@
+.body{
+    background-color: rgb(235, 196, 0);
+}
+
+.coupon{
+    float: left;
+    width: 50%;
+    padding: 15px;
+}
+#cname{
+    float: left;
+    color: white;
+    background-color: forestgreen;
+    border: 2px solid black;
+}
+#Apply{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+span{
+    display: block;
+    overflow: hidden;
+    padding: 0 4px 0 6px
+}
+#text_1{
+    /* border: 2px solid green; Text under coupon*/
+    font-size: .75em;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#text_2{
+    /* border: 2px solid green; Text above coupon*/
+    font-size: 1.25em;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.vertical_divider{
+    border-left: 2px solid black;
+    height: 850px;
+    position: absolute;
+    margin-top: -125px;
+    left: 30%;
+}
+
+.checkout_box{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    block-size: fit-content;
+    align-items: right;
+}
+#text_3{
+    /* border: 2px solid green; Text inside checkout box*/
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#P_Order{
+    background-color: orange;
+    color: black;
+    border: 2px solid black;
+}

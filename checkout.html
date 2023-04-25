@@ -33,18 +33,19 @@
 
         <div class="vertical_divider"></div>
 
+        <div id="checklist"></div>
+
         <div class="others">
             <div id="text_3">Add more items?</div>
-            <button id="C_Order" type="button" class="btn btn-success">Continue Ordering</button>
-            <button id="P_Order" type="button" class="btn btn-success" onclick="getRandomSaleID()">Place Order</button>
+            <button id="P_Order" type="button" class="btn btn-success">Place Order</button>
 
             <script>
                 function getRandomSaleID(){
                     // random number between 0 an 999
                     var saleID = Math.floor(Math.random() * 999);
-
+    
                     const tld = window.location.search;
-
+    
                     window.location.href = tld + "confirmation.html?orderID=" + saleID;
                 }
             </script>
