@@ -5,7 +5,7 @@ $(function () {
   $("#navi").load("./navbar.html");
   $("#list").load("./list.html", function () {
 
-    var images = document.getElementsByTagName('img');
+
     var images = document.getElementsByClassName("card-img-top");
     images[0].src = "./src/public/fruits/banana.jpeg";
     images[1].src = "./src/public/fruits/strawberry.jpeg";

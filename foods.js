@@ -8,7 +8,7 @@
     $("#list").load("./list.html",function(){
       
     
-    var images = document.getElementsByTagName('img');
+
     var images = document.getElementsByClassName("card-img-top");
     images[0].src = "./src/public/foods/egg_sandwitch.jpeg";
     images[1].src = "./src/public/foods/mac_cheese.jpeg";
