@@ -47,11 +47,11 @@ function removeFromCart(item) {
 }
 // Example usage with an "Add to Cart" button
 document.getElementById('add-to-cart-button').addEventListener('click', function() {
-  const item = 'Example Item'; // Replace with actual item data
+  const item = 'Example Item';
   addToCart(item);
 });
 document.getElementById('delete-from-cart-button').addEventListener('click', function() {
-  const item = 'Example Item'; // Replace with actual item data
+  const item = 'Example Item';
   removeFromCart(item);
 });
 
