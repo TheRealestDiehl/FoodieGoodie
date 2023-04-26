@@ -12,12 +12,6 @@
     images[4].src = "./src/public/vegetables/bell pepper.jpeg";
     images[5].src = "./src/public/vegetables/peas.jpeg";
 
-    // var textss = document.querySelector(".side_1");
-    // var priceNode = textss.childNodes[0];
-    // priceNode.nodeValue = "hahah";
-    // var priceNodes = textss.childNodes[1];
-    // priceNodes.nodeValue = "hahazh";
-
     var meat_name  = document.getElementsByClassName("card-title");
     meat_name[0].childNodes[0].nodeValue = "Broccoli";
     meat_name[1].childNodes[0].nodeValue = "Kale";
@@ -38,10 +32,10 @@
     textsss[5].childNodes[0].nodeValue = "$15.99";
 
     //removing the customizing dropdown list
-    var customize = document.querySelectorAll(".dropdown");
-    customize.forEach(function (custo) {
-      custo.remove();
-    });
+    // var customize = document.querySelectorAll(".dropdown");
+    // customize.forEach(function (custo) {
+    //   custo.remove();
+    // });
     });
 
     $(document).on('input', '#myInput', function() {

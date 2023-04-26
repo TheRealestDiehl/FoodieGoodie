@@ -4,24 +4,29 @@
 .container{
 
     display: flex;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .contain1{
-    border: 2px solid blueviolet;
+    /* border: 2px solid blueviolet; */
     flex-direction: row;
 }
 
 .contain2{
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 .contain3{
     /* border: ; */
 }
 
-
+.order_here{
+    /* border: 2px solid red; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
 .coupon{
     /* display: inline; */
-    border: 2px solid rgb(255, 255, 255);
+    /* border: 2px solid rgb(255, 255, 255); */
     float: left;
     /* width: 50%; */
     padding: 15px;
@@ -29,8 +34,8 @@
 #cname{
     /* border: ; */
     float: left;
-    color: white;
-    background-color: forestgreen;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     border: 2px solid black;
 }
 #Apply{
@@ -78,7 +83,72 @@ span{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #P_Order{
+    color: white;
+    margin: 20px;
+    width:60%;
+    background-color: rgb(75, 156, 67);
+    /* color: black */
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#P_Order:hover{
+    margin: 20px;
+    width:60%;
     background-color: orange;
     color: black;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    /* border: 1px solid #ccc; */
+  }
+  
+  th,
+  td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+    border-radius: 10px; /* Add this line to make cells more circular */
+  }
+  
+  th {
+    color: white;
+    background-color: #468e46;
+    font-weight: bold;
+  }
+  
+ 
+  
+  td button {
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px; /* Add this line to make buttons more circular */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: transparent; /* Add this line to remove background color */
+  }
+  
+  td button:hover {
+    background-color: #c0392b;
+  }
+  
+  #total-price {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: right;
+    padding: 10px;
+    background-color: #468e46;
+    border-radius: 10px;
+  }
+  

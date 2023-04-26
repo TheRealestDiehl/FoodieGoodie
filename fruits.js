@@ -32,10 +32,10 @@ $(function () {
     textsss[5].childNodes[0].nodeValue = "$3.78/lb";
 
     //removing the customizing dropdown list
-    var customize = document.querySelectorAll(".dropdown");
-    customize.forEach(function (custo) {
-      custo.remove();
-    });
+    // var customize = document.querySelectorAll(".dropdown");
+    // customize.forEach(function (custo) {
+    //   custo.remove();
+    // });
 
   });
   $(document).on('input', '#myInput', function () {
