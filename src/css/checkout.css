@@ -1,13 +1,33 @@
 .body{
     background-color: rgb(235, 196, 0);
 }
+.container{
+
+    display: flex;
+    border: 2px solid red;
+}
+.contain1{
+    border: 2px solid blueviolet;
+    flex-direction: row;
+}
+
+.contain2{
+    border: 2px solid green;
+}
+.contain3{
+    /* border: ; */
+}
+
 
 .coupon{
+    /* display: inline; */
+    border: 2px solid rgb(255, 255, 255);
     float: left;
-    width: 50%;
+    /* width: 50%; */
     padding: 15px;
 }
 #cname{
+    /* border: ; */
     float: left;
     color: white;
     background-color: forestgreen;
@@ -37,10 +57,10 @@ span{
 }
 
 .vertical_divider{
-    border-left: 2px solid black;
-    height: 850px;
-    position: absolute;
-    margin-top: -125px;
+    border-left: 20px solid black;
+    /* height: 850px; */
+    /* position: absolute; */
+    /* margin-top: -125px; */
     left: 35%;
 }
 
