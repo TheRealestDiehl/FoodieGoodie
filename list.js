@@ -56,9 +56,9 @@ addToOrderBtns.forEach((btn) => {
     const side1 = "$" + String(price);
     // console.log(price); // will output 5.99 (assuming the price is $5.99)
     var customize = event.target.parentNode.querySelector(".customize").textContent;
-    console.log(typeof customize);
-    console.log(customize);
-    if(customize != "Small" ||customize != "Medium" || customize != "Large"){
+    // console.log(typeof customize);
+    // console.log(customize);
+    if(customize != "Small" && customize != "Medium" && customize != "Large"){
       console.log("its is customize");
       customize = "Small";
     }
