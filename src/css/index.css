@@ -18,7 +18,12 @@
     font-family: cursive;
 
 }
-
+.text4{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: cursive;
+    padding-top: 25px;
+}
 .nav_container{
     margin-top: 5em;
     /* border: 2px solid blue; */
