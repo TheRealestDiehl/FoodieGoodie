@@ -23,7 +23,7 @@
             <div class="coupon">
                 <div id="text_2">Add coupon code</div>
                 <input type="text" id="cname" label="cname" name="cname" value="">
-                <span><button id="Apply" type="button" class="btn btn-success">Apply</button></span>
+                <span><button id="Apply" type="button" class="btn btn-success" onclick="couponCode()">Apply</button></span>
                 <div id="text_1">To use a coupon code you must have</div>
                 <div id="text_1">all items from the coupon on your order</div>
             </div>
@@ -45,7 +45,9 @@
 
         </div>
         <script>
-
+            function couponCode(){
+                //THE CODE HERE WOULD GIVE A DISCOUNT IF THEY HAVE THE RIGHT COUPON.
+            }
             function getRandomSaleID() {
                 // random number between 0 an 999
                 var saleID = Math.floor(Math.random() * 999);
