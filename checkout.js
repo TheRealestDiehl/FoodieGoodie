@@ -25,36 +25,6 @@ $(function(){
       });
     });
 
-// Define a cart array to store the items
-const cart = [];
-// Function to handle adding an item to the cart
-function addToCart(item) {
-  // Add the item to the cart array
-  cart.push(item);
-  // Optional: Update UI or perform other actions after adding item to the cart
-  console.log(`${item} added to order!`);
-}
-// Function to handle removing an item from the cart
-function removeFromCart(item) {
-  // Find the index of the item in the cart array
-  const index = cart.indexOf(item);
-  // If the item is found, remove it from the cart array
-  if (index > -1) {
-    cart.splice(index, 1);
-    // Optional: Update UI or perform other actions after removing item from the cart
-    console.log(`${item} removed from cart!`);
-  }
-}
-// Example usage with an "Add to Cart" button
-document.getElementById('add-to-cart-button').addEventListener('click', function() {
-  const item = 'Example Item';
-  addToCart(item);
-});
-document.getElementById('delete-from-cart-button').addEventListener('click', function() {
-  const item = 'Example Item';
-  removeFromCart(item);
-});
-
 //For the Food boxes on the checkout page
     $(document).on('input', '#myInput', function() {
       var query = $(this).val().toLowerCase();
