@@ -7,7 +7,7 @@
 
 # Installation
 
-# Clone the repository: git clone https://github.com/username/repo.git
+# Clone the repository: git clone https://github.com/TheRealestDiehl/FoodieGoodie.git
 # Navigate to the project directory: cd repo
 
 
