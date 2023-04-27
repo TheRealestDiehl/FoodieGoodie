@@ -6,8 +6,8 @@
 ##### Python 3.8 or higher
 
 # Installation
-# Clone the repository: git clone https://github.com/TheRealestDiehl/FoodieGoodie.git
-# Navigate to the project directory: cd repo
+##### Clone the repository: git clone https://github.com/TheRealestDiehl/FoodieGoodie.git
+##### Navigate to the project directory: cd repo
 
 
 
